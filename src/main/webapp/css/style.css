@@ -1,0 +1,59 @@
+@charset "UTF-8";
+html{
+	font-size:16px;
+}
+
+.product-table{
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+}
+.product-table th,
+.product-table td{
+	border:1px solid #ddd;
+	padding:10px 15px;
+}
+.product-head-tr{
+	padding:8px;
+	text-align:center;
+	background-color:#f2f2f2;
+	font-weight:bold;
+}
+.product-tbody-tr{
+	background-color:#f9f9f9;
+}
+.product-cost{
+	text-align:right;
+}
+nav{
+	text-align:center;
+	background-color:#ddd;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+nav a{
+	color:black;
+	text-decoration:none;
+}
+.header{
+	text-align:center;
+	margin:0;
+	background-color:blue;
+}
+.title{
+	text-align:center;
+}
+footer{
+	text-align:center;
+	background-color:blue;
+	margin-top:2rem;
+	
+}
