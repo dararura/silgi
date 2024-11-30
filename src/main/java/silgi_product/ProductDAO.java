@@ -76,7 +76,7 @@ public class ProductDAO {
 		return num;
 	}
 	
-	public int inout(String t_no, String p_code,String t_type,int t_cnt,Date t_date,String c_code) {
+	public boolean inout(String t_no, String p_code,String t_type,int t_cnt,Date t_date,String c_code) {
 		String sql="INSERT INTO tbl_inout VALUES (?,?,?,?,?,?)";
 		try {
 			PreparedStatement pstmt=con.prepareStatement(sql);
@@ -86,11 +86,12 @@ public class ProductDAO {
 			pstmt.setInt(4, t_cnt);
 			pstmt.setDate(5, t_date);
 			pstmt.setString(6, c_code);
-			return pstmt.executeUpdate();
+			int rowsAffected=pstmt.executeUpdate();
+			return rowsAffected>0;
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1;
+		return false;
 	}
 	
 	
