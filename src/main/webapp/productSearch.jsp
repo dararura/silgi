@@ -9,7 +9,7 @@
 <title>productSerch</title>
 </head>
 <body>
-<h1>제품조회</h1>
+<h1 class="title">제품조회</h1>
 <table class="product-table">
 	<thead class="product-head-tr">
 		<tr>

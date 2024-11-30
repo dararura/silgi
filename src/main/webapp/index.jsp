@@ -14,13 +14,13 @@
 <nav>
 	<ul>
 		<li>
-			<a href="productSerch.jsp">제품조회</a>
+			<a href="productSearch.jsp">제품조회</a>
 		</li>
 		<li>
 			<a href="inoutRegist.jsp">입출고등록</a>
 		</li>
 		<li>
-			<a href="inoutSerch.jsp">입출고내역조회</a>
+			<a href="inoutSearch.jsp">입출고내역조회</a>
 		</li>
 		<li>
 			<a href="sales.jsp">출고매출이익</a>

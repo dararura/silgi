@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1>입출고등록</h1>
-<form method="post" action="registAction.jsp" onsubmit="return checkForm()">
+<form method="post" id="inputForm" action="registAction.jsp" onsubmit="return checkForm()">
 <table>
 	<tr>
 		<td>입출고번호</td>
@@ -56,7 +56,7 @@
 	</tr>
 	<tr>
 		<td>
-			<input type="submit" value="입출고등록"><button onclick="reForm()">다시쓰기</button>
+			<input type="submit" value="입출고등록"><button type="button" onclick="reForm()">다시쓰기</button>
 		</td>
 	</tr>
 </table>

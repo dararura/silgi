@@ -28,6 +28,12 @@ function checkForm(){
 
 function reForm(){
 	alert("정보를 지우고 처음부터 다시 입력합니다");
-	
+
 	document.getElementById("p_code").value="";
+	document.getElementById("p_cnt").value="";
+	document.getElementById("t_date").value="";
+	document.getElementById("c_code").value="";
+	
+	document.getElementById("p_code").focus();
+	
 }

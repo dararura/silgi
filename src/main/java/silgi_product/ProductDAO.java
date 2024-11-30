@@ -27,6 +27,11 @@ public class ProductDAO {
 		try {
 			PreparedStatement pstmt=con.prepareStatement(sql);
 			rs=pstmt.executeQuery();
+			if (!rs.isBeforeFirst()) {
+			    System.out.println("쿼리 결과가 없습니다.");
+			} else {
+			    System.out.println("쿼리 실행 성공");
+			}
 			while(rs.next()) {
 				ProductDTO product=new ProductDTO();
 				product.setP_code(rs.getString(1));
