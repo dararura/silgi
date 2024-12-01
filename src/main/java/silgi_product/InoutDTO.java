@@ -9,6 +9,8 @@ public class InoutDTO {
 	private int t_cnt;
 	private Date t_date;
 	private String c_code;
+	private String p_name;
+	private String c_name;
 	
 	public String getT_no() {
 		return t_no;
@@ -45,6 +47,18 @@ public class InoutDTO {
 	}
 	public void setC_code(String c_code) {
 		this.c_code = c_code;
+	}
+	public String getP_name() {
+		return p_name;
+	}
+	public void setP_name(String p_name) {
+		this.p_name = p_name;
+	}
+	public String getC_name() {
+		return c_name;
+	}
+	public void setC_name(String c_name) {
+		this.c_name = c_name;
 	}
 	
 }

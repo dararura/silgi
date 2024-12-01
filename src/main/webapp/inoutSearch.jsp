@@ -1,8 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="silgi_product.ProductDAO"%>
+<%@ page import="silgi_product.InoutDTO" %>
+<%@ page import="java.util.*"%>
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 <meta charset="UTF-8">
 <title>입출고내역조회</title>
 </head>
@@ -20,6 +24,23 @@
 			<th>거래일자</th>
 		</tr>
 	</thead>
+	<tbody>
+		<%
+		ProductDAO productDAO=new ProductDAO();
+		List<InoutDTO> list=productDAO.getInout();;
+		for(InoutDTO inoutDTO:list){
+		%>
+		<tr class="product-tbody-tr">
+			<td><%=inoutDTO.getT_no() %></td>
+			<td><%=inoutDTO.getP_code() %></td>
+			<td><%=inoutDTO.getP_name()%></td>
+			<td><%=inoutDTO.getT_type() %></td>
+			<td><%=inoutDTO.getT_cnt() %></td>
+			<td><%=inoutDTO.getC_name() %></td>
+			<td><%=inoutDTO.getT_date() %></td>
+		</tr>
+		<%} %>
+	</tbody>
 </table>
 </body>
 </html>
